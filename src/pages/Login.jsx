@@ -23,7 +23,7 @@ const Login = () => {
         <>
             <Navbar></Navbar>
             <div className="text-3xl my-10 text-center">
-                <h2 className="text-3xl my-10">Please log in </h2>
+                <h2 className="text-3xl my-10">Please login </h2>
                 <form onSubmit={handleLogin} className=" md:w-3/4 lg:w-1/2 mx-auto">
 
                     <div className="form-control">
@@ -36,7 +36,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" required name="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" required name="password" placeholder="password" className="input input-bordered"  />
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
