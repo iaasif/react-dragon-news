@@ -9,6 +9,7 @@ import Register from "../pages/Register";
 import About from "../pages/About";
 import Career from "../pages/Career";
 import News from "../pages/News";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -20,11 +21,14 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('news.json'),
+                loader: () => fetch('/news.json'),
             },
             {
                 path: '/news/:id',
-                element: <News></News>
+                // private route added 
+                element: <PrivateRoute><News></News></PrivateRoute>
+
+
             },
             {
                 path: '/login',
