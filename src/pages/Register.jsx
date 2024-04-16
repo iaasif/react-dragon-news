@@ -8,7 +8,7 @@ const Register = () => {
 
     // context using
 
-    const { creatUser } = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
 
 
     const handleRegister = e => {
@@ -22,10 +22,10 @@ const Register = () => {
         // console.log(name, photo, email, password);
 
 
-        creatUser(email, password)
+        createUser(email, password)
             .then((res) => {
                 // Signed up 
-                console.log(res);;
+                console.log(res);
                 // ...
             })
             .catch((error) => {
