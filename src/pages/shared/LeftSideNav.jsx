@@ -10,7 +10,7 @@ const LeftSideNav = () => {
     }, [])
 
 
-    console.log(categories);
+    // console.log(categories);
     return (
         <div className='space-y-6'>
             <h2 className='text-2xl'>All categories </h2>
